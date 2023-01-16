@@ -21,8 +21,8 @@ func Srt2FcpXmlExport(projectName string, frameDuration interface{}, subtitles *
 	res := Resources.NewResources()
 	res.SetEffect(Resources.NewEffect())
 	format := Resources.NewFormat().
-		SetWidth(1920).
-		SetHeight(1080).
+		SetWidth(1080).
+		SetHeight(1920).
 		SetFrameRate(frameDuration).Render()
 	res.SetFormat(format)
 	fcpxml.SetResources(res)
